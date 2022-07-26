@@ -1,0 +1,49 @@
+this code has syntax of basic class and objects functionality
+
+
+class Hero {
+  
+    
+    int health;
+    char name[10];
+    char level;
+    public:
+      Hero(int health){
+        this->health = health;
+    } // parameterized constructor
+    
+    
+    Hero(Hero &temp){
+        
+        this->health = temp.health;
+    }// user defined copy constructor
+    
+    
+    void setHealth(int x){
+        health =x;
+    }
+    
+    int getHealth(){
+        return health;
+    }
+    
+    
+};
+
+int main() {
+    // Write C++ code here
+ Hero harsh(235);
+ 
+ Hero ajit(34);
+ 
+ Hero k(ajit);
+ //above line means 
+ // ajit.health = harsh.health
+ // this is known as copy constructor.
+ 
+ 
+ cout<<harsh.getHealth()<<endl;
+ cout<<ajit.getHealth()<<endl;
+ cout<<k.getHealth();
+    return 0;
+}
