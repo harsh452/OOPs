@@ -1,0 +1,20 @@
+Wrapping up of Data members and func is called encapsulation.
+when all d.m of class are privete then it is called fully encapsulated class.
+
+class Hero{
+  
+  private:
+    string name;
+    int health;
+    char level;
+ public:
+    string getName(){
+        return name;
+    }
+     int getHealth(){
+        return health;
+    } 
+    char getLevel(){
+        return level;
+    }
+};
