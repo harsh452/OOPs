@@ -1,0 +1,38 @@
+class Hero{
+  
+  public:
+    string name;
+    int health;
+    char level;
+ public:
+    string getName(){
+        return name;
+    }
+     int getHealth(){
+        return health;
+    } 
+    char getLevel(){
+        return level;
+    }
+    void setHealth(int x){
+        this->health=x;
+    }
+};
+
+class H1 : public Hero{
+    public:
+    int id;
+    string location;
+};
+
+
+int main() {
+H1 ramesh;
+
+ramesh.setHealth(67);
+ramesh.id =4;
+cout<<ramesh.getHealth()<<endl;
+cout<<ramesh.id;
+
+    return 0;
+}
